@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu Interior | Luxury Interior Design in Kolkata</title>
+    <meta name="description" content="Priyanshu Interior offers premium residential and commercial interior design services, modular kitchens, and custom turnkey solutions in Barrackpore, Kolkata.">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Priyanshu Interior | Luxury Interior Design">
+    <meta property="og:description" content="Premium residential and commercial interior design services in Barrackpore, Kolkata.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Priyanshu Interior",
+      "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+      "@id": "",
+      "url": "",
+      "telephone": "",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Shivshakti Apartment, Talpukur",
+        "addressLocality": "Barrackpore, Kolkata",
+        "addressRegion": "West Bengal",
+        "addressCountry": "IN"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "36"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#FDFBF7',
+                        primary: '#1A1A1A',
+                        accent: '#D4AF37',
+                        walnut: '#5C4033',
+                        charcoal: '#333333'
+                    },
+                    fontFamily: {
+                        playfair: ['"Playfair Display"', 'serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif']
+                    },
+                    spacing: {
+                        '128': '32rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Vanilla CSS for custom animations & Lenis -->
+    <style>
+        /* Smooth Scroll (Lenis) Reset */
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto; }
+        .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+        .lenis.lenis-stopped { overflow: hidden; }
+        .lenis.lenis-scrolling iframe { pointer-events: none; }
+
+        /* Custom Cursor */
+        body { cursor: none; }
+        .cursor-dot {
+            width: 8px; height: 8px;
+            background: #D4AF37;
+            border-radius: 50%;
+            position: fixed;
+            top: 0; left: 0;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, height 0.3s, background-color 0.3s;
+            mix-blend-mode: difference;
+        }
+        .cursor-outline {
+            width: 40px; height: 40px;
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            border-radius: 50%;
+            position: fixed;
+            top: 0; left: 0;
+            pointer-events: none;
+            z-index: 9998;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, height 0.3s, border-color 0.3s;
+        }
+        .hover-active .cursor-dot { width: 40px; height: 40px; background: rgba(212, 175, 55, 0.2); backdrop-filter: blur(2px); }
+        .hover-active .cursor-outline { width: 60px; height: 60px; border-color: transparent; }
+
+        /* Hide Scrollbar */
+        ::-webkit-scrollbar { width: 0px; background: transparent; }
+
+        /* Image Hover Zoom Utility */
+        .img-zoom-container { overflow: hidden; }
+        .img-zoom-container img { transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
+        .img-zoom-container:hover img { transform: scale(1.08); }
+
+        /* Text Gradient */
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Glassmorphism */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass-card {
+            background: rgba(26, 26, 26, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.4s ease;
+        }
+        .dark .glass-nav {
+            background: rgba(18, 18, 18, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Parallax Image Wrapper */
+        .parallax-bg {
+            position: absolute;
+            top: -10%; left: 0;
+            width: 100%; height: 120%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Masonry Gallery Fallback */
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-auto-rows: 10px;
+            gap: 20px;
+        }
+
+        /* Utilities */
+        .text-reveal-mask { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+        .magnetic { display: inline-block; }
+        
+        @media (max-width: 768px) {
+            body { cursor: auto; }
+            .cursor-dot, .cursor-outline { display: none; }
+        }
+    </style>
+</head>
+<body class="bg-ivory dark:bg-[#121212] text-charcoal dark:text-ivory font-poppins selection:bg-accent selection:text-white transition-colors duration-500">
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-6">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="#" class="font-playfair text-2xl md:text-3xl font-bold tracking-wider text-primary dark:text-white hoverable">
+                PRIYANSHU<span class="text-accent text-sm md:text-lg ml-1">INTERIOR</span>
+            </a>
+            <div class="hidden md:flex space-x-10 items-center font-montserrat text-sm tracking-widest text-primary dark:text-white font-medium">
+                <a href="#about" class="hover:text-accent dark:hover:text-accent transition-colors hoverable">ABOUT</a>
+                <a href="#services" class="hover:text-accent dark:hover:text-accent transition-colors hoverable">SERVICES</a>
+                <a href="#portfolio" class="hover:text-accent dark:hover:text-accent transition-colors hoverable">PORTFOLIO</a>
+                <a href="#contact" class="hover:text-accent dark:hover:text-accent transition-colors hoverable">CONTACT</a>
+            </div>
+            
+            <div class="flex items-center gap-4 md:gap-6">
+                <!-- Dark Mode Toggle Button -->
+                <button id="theme-toggle" class="text-primary dark:text-white text-xl hover:text-accent dark:hover:text-accent transition-colors hoverable focus:outline-none" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block"></i>
+                </button>
+                <a href="#contact" class="hidden md:inline-block bg-primary dark:bg-white dark:text-primary text-white font-montserrat text-xs tracking-widest px-8 py-4 uppercase hover:bg-accent dark:hover:bg-accent transition-colors duration-300 magnetic hoverable">
+                    Book Consultation
+                </a>
+                <button class="md:hidden text-2xl text-primary dark:text-white focus:outline-none hoverable">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <!-- Parallax Background -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=80" alt="Ultra Luxury Living Room" class="parallax-bg" id="hero-img">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+        </div>
+
+        <div class="container mx-auto px-6 md:px-12 relative z-10 flex flex-col items-center text-center mt-20">
+            <div class="text-reveal-mask overflow-hidden mb-4">
+                <h2 class="text-accent font-montserrat tracking-[0.3em] text-xs md:text-sm uppercase hero-elem">Welcome to Premium Living</h2>
+            </div>
+            
+            <div class="text-reveal-mask overflow-hidden mb-6">
+                <h1 class="font-playfair text-5xl md:text-7xl lg:text-8xl text-white font-bold leading-tight hero-elem">
+                    Crafting Timeless <br>
+                    <span class="italic font-light">Interior Experiences</span>
+                </h1>
+            </div>
+            
+            <div class="text-reveal-mask overflow-hidden mb-12 max-w-2xl">
+                <p class="text-white/90 font-poppins text-sm md:text-lg font-light hero-elem">
+                    Luxury Residential &bull; Commercial Spaces &bull; Modular Kitchens &bull; Custom Turnkey Solutions
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-6 hero-elem">
+                <a href="#portfolio" class="bg-accent text-white font-montserrat text-sm tracking-widest px-10 py-5 uppercase hover:bg-white hover:text-primary transition-all duration-400 magnetic hoverable">
+                    Explore Portfolio
+                </a>
+                <a href="#contact" class="bg-transparent border border-white text-white font-montserrat text-sm tracking-widest px-10 py-5 uppercase hover:bg-white hover:text-primary transition-all duration-400 magnetic hoverable">
+                    Call Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Glass Card -->
+        <div class="absolute bottom-10 right-6 md:bottom-20 md:right-20 glass-card px-8 py-6 rounded-2xl z-20 flex items-center gap-6 hero-elem gs-float">
+            <div>
+                <div class="text-accent text-xl mb-1">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="font-montserrat font-bold text-primary dark:text-white text-2xl">5.0 <span class="text-sm font-normal text-charcoal dark:text-ivory/80">Google Rating</span></p>
+            </div>
+            <div class="w-px h-12 bg-charcoal/20 dark:bg-white/20"></div>
+            <div>
+                <p class="font-playfair italic text-2xl text-primary dark:text-white">36+</p>
+                <p class="font-poppins text-xs text-charcoal dark:text-ivory/80 uppercase tracking-wider">Happy Clients</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 md:py-32 bg-ivory dark:bg-[#121212] relative transition-colors duration-500">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative img-zoom-container rounded-sm overflow-hidden h-[500px] md:h-[700px] gs-reveal-left">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80" alt="Detail oriented interior design" class="w-full h-full object-cover">
+                    <!-- Decorative Element -->
+                    <div class="absolute -bottom-6 -left-6 w-48 h-48 border border-accent rounded-sm z-[-1]"></div>
+                </div>
+                <div class="gs-reveal-right">
+                    <h3 class="font-montserrat text-accent tracking-[0.2em] text-sm uppercase mb-4">The Brand Story</h3>
+                    <h2 class="font-playfair text-4xl md:text-5xl lg:text-6xl text-primary dark:text-white mb-8 leading-tight">
+                        Elevating lifestyles through <span class="italic text-walnut dark:text-accent">functional elegance.</span>
+                    </h2>
+                    <p class="font-poppins text-charcoal/80 dark:text-ivory/80 text-lg mb-6 leading-relaxed font-light">
+                        At Priyanshu Interior, we believe that luxury is not just an aesthetic; it is a meticulously crafted experience. We focus on the delicate balance between modern lifestyle needs and personalized creative thinking.
+                    </p>
+                    <p class="font-poppins text-charcoal/80 dark:text-ivory/80 text-lg mb-10 leading-relaxed font-light">
+                        Every space we touch is characterized by an unwavering attention to detail and premium craftsmanship. From the initial conceptualization to the final execution, our goal is to curate environments that resonate with your unique identity while offering unparalleled comfort and functionality.
+                    </p>
+                    <div class="flex items-center gap-6 pt-6 border-t border-charcoal/10 dark:border-white/10">
+                        <img src="https://ui-avatars.com/api/?name=Priyanshu+Interior&background=D4AF37&color=fff&rounded=true" alt="Owner" class="w-16 h-16 rounded-full grayscale opacity-80">
+                        <div>
+                            <p class="font-playfair text-xl text-primary dark:text-white">Priyanshu Interior</p>
+                            <p class="font-montserrat text-xs tracking-widest text-accent uppercase">Lead Designer & Founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 md:py-32 bg-white dark:bg-[#1A1A1A] transition-colors duration-500">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center mb-20 gs-reveal-up">
+                <h3 class="font-montserrat text-accent tracking-[0.2em] text-sm uppercase mb-4">Our Expertise</h3>
+                <h2 class="font-playfair text-4xl md:text-5xl text-primary dark:text-white">Bespoke Design Services</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="group relative h-[450px] overflow-hidden cursor-pointer hoverable gs-reveal-up">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Luxury Living Room" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end">
+                        <i class="fas fa-couch text-accent text-3xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"></i>
+                        <h3 class="font-playfair text-white text-3xl mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Residential Interior</h3>
+                        <p class="font-poppins text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                            Comprehensive design solutions for bedrooms, living rooms, dining spaces, and complete home transformations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group relative h-[450px] overflow-hidden cursor-pointer hoverable gs-reveal-up" style="transition-delay: 100ms;">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Commercial Office" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end">
+                        <i class="fas fa-building text-accent text-3xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"></i>
+                        <h3 class="font-playfair text-white text-3xl mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Commercial Spaces</h3>
+                        <p class="font-poppins text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                            Elevating brand presence through innovative office interiors, retail designs, and space planning.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group relative h-[450px] overflow-hidden cursor-pointer hoverable gs-reveal-up" style="transition-delay: 200ms;">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" alt="Modular Kitchen" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end">
+                        <i class="fas fa-utensils text-accent text-3xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"></i>
+                        <h3 class="font-playfair text-white text-3xl mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Modular Kitchens</h3>
+                        <p class="font-poppins text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                            Ultra-luxury, highly functional modular kitchen designs utilizing premium materials and smart hardware.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group relative h-[450px] overflow-hidden cursor-pointer hoverable gs-reveal-up">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Custom Furniture" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end">
+                        <i class="fas fa-chair text-accent text-3xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"></i>
+                        <h3 class="font-playfair text-white text-3xl mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Custom Furniture</h3>
+                        <p class="font-poppins text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                            Bespoke furniture design including wardrobes, TV units, and statement pieces crafted to perfection.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="group relative h-[450px] overflow-hidden cursor-pointer hoverable gs-reveal-up" style="transition-delay: 100ms;">
+                    <img src="https://images.unsplash.com/photo-1503174971373-b1f69850bded?auto=format&fit=crop&w=800&q=80" alt="3D Visualization" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end">
+                        <i class="fas fa-cube text-accent text-3xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"></i>
+                        <h3 class="font-playfair text-white text-3xl mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">3D Visualization</h3>
+                        <p class="font-poppins text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                            Photorealistic 3D renderings to help you visualize the final outcome before execution begins.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="group relative h-[450px] overflow-hidden cursor-pointer hoverable gs-reveal-up" style="transition-delay: 200ms;">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Turnkey Solutions" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end">
+                        <i class="fas fa-key text-accent text-3xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"></i>
+                        <h3 class="font-playfair text-white text-3xl mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Turnkey Execution</h3>
+                        <p class="font-poppins text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                            End-to-end interior solutions from conceptualization to final handover, ensuring a stress-free experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 md:py-32 bg-primary text-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gs-reveal-up">
+                <div>
+                    <h3 class="font-montserrat text-accent tracking-[0.2em] text-sm uppercase mb-4">Selected Works</h3>
+                    <h2 class="font-playfair text-4xl md:text-5xl lg:text-6xl text-white">Our Masterpieces</h2>
+                </div>
+                <!-- Filters -->
+                <div class="flex flex-wrap gap-4 mt-8 md:mt-0 font-montserrat text-xs tracking-widest uppercase">
+                    <button class="filter-btn active text-accent pb-1 border-b border-accent hoverable" data-filter="all">All</button>
+                    <button class="filter-btn text-white/50 hover:text-white transition-colors pb-1 border-b border-transparent hover:border-white hoverable" data-filter="residential">Residential</button>
+                    <button class="filter-btn text-white/50 hover:text-white transition-colors pb-1 border-b border-transparent hover:border-white hoverable" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn text-white/50 hover:text-white transition-colors pb-1 border-b border-transparent hover:border-white hoverable" data-filter="kitchen">Kitchens</button>
+                </div>
+            </div>
+
+            <!-- CSS Grid / Masonry Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gs-reveal-up">
+                
+                <!-- Item 1 -->
+                <div class="portfolio-item relative overflow-hidden group img-zoom-container hoverable h-[400px]" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?auto=format&fit=crop&w=800&q=80" alt="Luxury Living Room" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6">
+                        <h4 class="font-playfair text-2xl text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">The Ivory Residence</h4>
+                        <p class="font-montserrat text-xs tracking-widest text-accent uppercase transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">Living Room</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="portfolio-item relative overflow-hidden group img-zoom-container hoverable h-[400px] md:h-[600px] md:row-span-2" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Modern Office" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6">
+                        <h4 class="font-playfair text-2xl text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Tech Hub Workspace</h4>
+                        <p class="font-montserrat text-xs tracking-widest text-accent uppercase transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">Corporate Office</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="portfolio-item relative overflow-hidden group img-zoom-container hoverable h-[400px]" data-category="kitchen">
+                    <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80" alt="Modular Kitchen" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6">
+                        <h4 class="font-playfair text-2xl text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Matte Finish Elegance</h4>
+                        <p class="font-montserrat text-xs tracking-widest text-accent uppercase transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">Modular Kitchen</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="portfolio-item relative overflow-hidden group img-zoom-container hoverable h-[400px]" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Master Bedroom" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6">
+                        <h4 class="font-playfair text-2xl text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Serene Suite</h4>
+                        <p class="font-montserrat text-xs tracking-widest text-accent uppercase transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">Master Bedroom</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="portfolio-item relative overflow-hidden group img-zoom-container hoverable h-[400px]" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Dining Space" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6">
+                        <h4 class="font-playfair text-2xl text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Walnut Dining</h4>
+                        <p class="font-montserrat text-xs tracking-widest text-accent uppercase transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">Dining Space</p>
+                    </div>
+                </div>
+
+                 <!-- Item 6 -->
+                 <div class="portfolio-item relative overflow-hidden group img-zoom-container hoverable h-[400px]" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80" alt="Retail Interior" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6">
+                        <h4 class="font-playfair text-2xl text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Boutique Display</h4>
+                        <p class="font-montserrat text-xs tracking-widest text-accent uppercase transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">Retail Space</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="#contact" class="inline-block border border-accent/50 text-white font-montserrat text-sm tracking-widest px-10 py-5 uppercase hover:bg-accent hover:border-accent transition-all duration-400 magnetic hoverable">
+                    Start Your Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-20 bg-ivory dark:bg-[#121212] border-y border-charcoal/10 dark:border-white/10 transition-colors duration-500">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+                <div class="gs-reveal-up">
+                    <p class="font-playfair text-5xl md:text-6xl text-primary dark:text-white mb-2"><span class="counter" data-target="100">0</span>+</p>
+                    <p class="font-montserrat text-xs uppercase tracking-widest text-charcoal/70 dark:text-ivory/70">Completed Projects</p>
+                </div>
+                <div class="gs-reveal-up" style="transition-delay: 100ms;">
+                    <p class="font-playfair text-5xl md:text-6xl text-primary dark:text-white mb-2"><span class="counter" data-target="36">0</span>+</p>
+                    <p class="font-montserrat text-xs uppercase tracking-widest text-charcoal/70 dark:text-ivory/70">Google Reviews</p>
+                </div>
+                <div class="gs-reveal-up" style="transition-delay: 200ms;">
+                    <p class="font-playfair text-5xl md:text-6xl text-primary dark:text-white mb-2"><span class="counter" data-target="5.0" data-decimal="1">0.0</span>★</p>
+                    <p class="font-montserrat text-xs uppercase tracking-widest text-charcoal/70 dark:text-ivory/70">Star Rating</p>
+                </div>
+                <div class="gs-reveal-up" style="transition-delay: 300ms;">
+                    <p class="font-playfair text-5xl md:text-6xl text-primary dark:text-white mb-2"><span class="counter" data-target="100">0</span>%</p>
+                    <p class="font-montserrat text-xs uppercase tracking-widest text-charcoal/70 dark:text-ivory/70">Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-24 md:py-32 bg-white dark:bg-[#1A1A1A] transition-colors duration-500">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center mb-20 gs-reveal-up">
+                <h3 class="font-montserrat text-accent tracking-[0.2em] text-sm uppercase mb-4">How We Work</h3>
+                <h2 class="font-playfair text-4xl md:text-5xl text-primary dark:text-white">The Seamless Process</h2>
+            </div>
+
+            <div class="max-w-4xl mx-auto relative border-l border-accent/30 pl-8 md:pl-0 md:border-l-0">
+                <!-- Timeline Line Desktop -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-accent/30 transform -translate-x-1/2"></div>
+
+                <!-- Process Steps -->
+                <div class="space-y-12">
+                    <!-- Step 1 -->
+                    <div class="relative md:flex md:justify-between md:items-center gs-reveal-up group hoverable">
+                        <div class="md:w-5/12 md:text-right pr-0 md:pr-12">
+                            <h4 class="font-playfair text-2xl text-primary dark:text-white mb-2">Consultation</h4>
+                            <p class="font-poppins text-charcoal/70 dark:text-ivory/70 text-sm font-light">Understanding your vision, lifestyle requirements, and design aspirations.</p>
+                        </div>
+                        <div class="absolute -left-10 md:left-1/2 top-0 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-4 h-4 bg-accent rounded-full ring-4 ring-white dark:ring-[#1A1A1A] group-hover:scale-150 transition-transform duration-300 z-10"></div>
+                        <div class="md:w-5/12 pl-0 md:pl-12 mt-2 md:mt-0">
+                            <span class="font-montserrat text-6xl text-primary/5 dark:text-white/5 font-bold absolute top-0 -left-6 md:relative md:top-auto md:left-auto md:inline-block">01</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative md:flex md:justify-between md:items-center md:flex-row-reverse gs-reveal-up group hoverable">
+                        <div class="md:w-5/12 pl-0 md:pl-12">
+                            <h4 class="font-playfair text-2xl text-primary dark:text-white mb-2">Site Visit</h4>
+                            <p class="font-poppins text-charcoal/70 dark:text-ivory/70 text-sm font-light">Detailed measurement and spatial analysis of the property to optimize the layout.</p>
+                        </div>
+                        <div class="absolute -left-10 md:left-1/2 top-0 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-4 h-4 bg-accent rounded-full ring-4 ring-white dark:ring-[#1A1A1A] group-hover:scale-150 transition-transform duration-300 z-10"></div>
+                        <div class="md:w-5/12 md:text-right pr-0 md:pr-12 mt-2 md:mt-0">
+                            <span class="font-montserrat text-6xl text-primary/5 dark:text-white/5 font-bold absolute top-0 -left-6 md:relative md:top-auto md:left-auto md:inline-block">02</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative md:flex md:justify-between md:items-center gs-reveal-up group hoverable">
+                        <div class="md:w-5/12 md:text-right pr-0 md:pr-12">
+                            <h4 class="font-playfair text-2xl text-primary dark:text-white mb-2">Concept Design</h4>
+                            <p class="font-poppins text-charcoal/70 dark:text-ivory/70 text-sm font-light">Curating mood boards, color palettes, and preliminary spatial layouts.</p>
+                        </div>
+                        <div class="absolute -left-10 md:left-1/2 top-0 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-4 h-4 bg-accent rounded-full ring-4 ring-white dark:ring-[#1A1A1A] group-hover:scale-150 transition-transform duration-300 z-10"></div>
+                        <div class="md:w-5/12 pl-0 md:pl-12 mt-2 md:mt-0">
+                            <span class="font-montserrat text-6xl text-primary/5 dark:text-white/5 font-bold absolute top-0 -left-6 md:relative md:top-auto md:left-auto md:inline-block">03</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative md:flex md:justify-between md:items-center md:flex-row-reverse gs-reveal-up group hoverable">
+                        <div class="md:w-5/12 pl-0 md:pl-12">
+                            <h4 class="font-playfair text-2xl text-primary dark:text-white mb-2">3D Visualization</h4>
+                            <p class="font-poppins text-charcoal/70 dark:text-ivory/70 text-sm font-light">Creating photorealistic 3D renders so you can see exactly what the final space will look like.</p>
+                        </div>
+                        <div class="absolute -left-10 md:left-1/2 top-0 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-4 h-4 bg-accent rounded-full ring-4 ring-white dark:ring-[#1A1A1A] group-hover:scale-150 transition-transform duration-300 z-10"></div>
+                        <div class="md:w-5/12 md:text-right pr-0 md:pr-12 mt-2 md:mt-0">
+                            <span class="font-montserrat text-6xl text-primary/5 dark:text-white/5 font-bold absolute top-0 -left-6 md:relative md:top-auto md:left-auto md:inline-block">04</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="relative md:flex md:justify-between md:items-center gs-reveal-up group hoverable">
+                        <div class="md:w-5/12 md:text-right pr-0 md:pr-12">
+                            <h4 class="font-playfair text-2xl text-primary dark:text-white mb-2">Material Selection</h4>
+                            <p class="font-poppins text-charcoal/70 dark:text-ivory/70 text-sm font-light">Handpicking premium materials, finishes, textures, and custom hardware for your project.</p>
+                        </div>
+                        <div class="absolute -left-10 md:left-1/2 top-0 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-4 h-4 bg-accent rounded-full ring-4 ring-white dark:ring-[#1A1A1A] group-hover:scale-150 transition-transform duration-300 z-10"></div>
+                        <div class="md:w-5/12 pl-0 md:pl-12 mt-2 md:mt-0">
+                            <span class="font-montserrat text-6xl text-primary/5 dark:text-white/5 font-bold absolute top-0 -left-6 md:relative md:top-auto md:left-auto md:inline-block">05</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="relative md:flex md:justify-between md:items-center md:flex-row-reverse gs-reveal-up group hoverable">
+                        <div class="md:w-5/12 pl-0 md:pl-12">
+                            <h4 class="font-playfair text-2xl text-primary dark:text-white mb-2">Execution</h4>
+                            <p class="font-poppins text-charcoal/70 dark:text-ivory/70 text-sm font-light">Skilled craftsmen and project managers bringing the 3D vision into reality with precision.</p>
+                        </div>
+                        <div class="absolute -left-10 md:left-1/2 top-0 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-4 h-4 bg-accent rounded-full ring-4 ring-white dark:ring-[#1A1A1A] group-hover:scale-150 transition-transform duration-300 z-10"></div>
+                        <div class="md:w-5/12 md:text-right pr-0 md:pr-12 mt-2 md:mt-0">
+                            <span class="font-montserrat text-6xl text-primary/5 dark:text-white/5 font-bold absolute top-0 -left-6 md:relative md:top-auto md:left-auto md:inline-block">06</span>
+                        </div>
+                    </div>
+
+                     <!-- Step 7 -->
+                     <div class="relative md:flex md:justify-between md:items-center gs-reveal-up group hoverable">
+                        <div class="md:w-5/12 md:text-right pr-0 md:pr-12">
+                            <h4 class="font-playfair text-2xl text-primary dark:text-white mb-2">Final Delivery</h4>
+                            <p class="font-poppins text-charcoal/70 dark:text-ivory/70 text-sm font-light">A thorough quality check and final handover of your newly transformed luxury space.</p>
+                        </div>
+                        <div class="absolute -left-10 md:left-1/2 top-0 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 w-4 h-4 bg-accent rounded-full ring-4 ring-white dark:ring-[#1A1A1A] group-hover:scale-150 transition-transform duration-300 z-10"></div>
+                        <div class="md:w-5/12 pl-0 md:pl-12 mt-2 md:mt-0">
+                            <span class="font-montserrat text-6xl text-primary/5 dark:text-white/5 font-bold absolute top-0 -left-6 md:relative md:top-auto md:left-auto md:inline-block">07</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us & Testimonials -->
+    <section class="py-24 md:py-32 bg-ivory dark:bg-[#121212] transition-colors duration-500">
+        <div class="container mx-auto px-6 md:px-12">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <!-- Why Choose Us -->
+                <div>
+                    <h3 class="font-montserrat text-accent tracking-[0.2em] text-sm uppercase mb-4 gs-reveal-up">The Advantage</h3>
+                    <h2 class="font-playfair text-4xl md:text-5xl text-primary dark:text-white mb-10 gs-reveal-up">Why Choose Priyanshu Interior?</h2>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-white dark:bg-[#1A1A1A] p-8 border border-charcoal/5 dark:border-white/5 gs-reveal-up hover:-translate-y-2 transition-transform duration-300">
+                            <i class="fas fa-gem text-accent text-2xl mb-4"></i>
+                            <h4 class="font-playfair text-xl text-primary dark:text-white mb-2">Modern Design</h4>
+                            <p class="font-poppins text-xs text-charcoal/70 dark:text-ivory/70 leading-relaxed">Contemporary aesthetics tailored to modern lifestyle requirements.</p>
+                        </div>
+                        <div class="bg-white dark:bg-[#1A1A1A] p-8 border border-charcoal/5 dark:border-white/5 gs-reveal-up hover:-translate-y-2 transition-transform duration-300" style="transition-delay: 100ms;">
+                            <i class="fas fa-layer-group text-accent text-2xl mb-4"></i>
+                            <h4 class="font-playfair text-xl text-primary dark:text-white mb-2">Premium Materials</h4>
+                            <p class="font-poppins text-xs text-charcoal/70 dark:text-ivory/70 leading-relaxed">Uncompromising quality sourcing for longevity and luxury feel.</p>
+                        </div>
+                        <div class="bg-white dark:bg-[#1A1A1A] p-8 border border-charcoal/5 dark:border-white/5 gs-reveal-up hover:-translate-y-2 transition-transform duration-300">
+                            <i class="fas fa-clock text-accent text-2xl mb-4"></i>
+                            <h4 class="font-playfair text-xl text-primary dark:text-white mb-2">On-time Delivery</h4>
+                            <p class="font-poppins text-xs text-charcoal/70 dark:text-ivory/70 leading-relaxed">Strict adherence to timelines without compromising craftsmanship.</p>
+                        </div>
+                        <div class="bg-white dark:bg-[#1A1A1A] p-8 border border-charcoal/5 dark:border-white/5 gs-reveal-up hover:-translate-y-2 transition-transform duration-300" style="transition-delay: 100ms;">
+                            <i class="fas fa-handshake text-accent text-2xl mb-4"></i>
+                            <h4 class="font-playfair text-xl text-primary dark:text-white mb-2">Transparent Process</h4>
+                            <p class="font-poppins text-xs text-charcoal/70 dark:text-ivory/70 leading-relaxed">Clear communication on budgets, timelines, and material specs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <div class="flex flex-col justify-center">
+                    <h3 class="font-montserrat text-accent tracking-[0.2em] text-sm uppercase mb-4 gs-reveal-up">Client Feedback</h3>
+                    <h2 class="font-playfair text-4xl md:text-5xl text-primary dark:text-white mb-10 gs-reveal-up">Words of Trust</h2>
+
+                    <div class="space-y-6 relative">
+                        <!-- Decorative Quote -->
+                        <i class="fas fa-quote-right absolute -top-10 right-0 text-9xl text-charcoal/[0.03] dark:text-white/[0.03] z-0"></i>
+
+                        <!-- Review 1 -->
+                        <div class="glass-card p-8 relative z-10 gs-reveal-up">
+                            <div class="text-accent text-sm mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="font-poppins text-charcoal/80 dark:text-ivory/80 text-sm italic mb-4">"The attention to detail in our modular kitchen is outstanding. They completely transformed our space into a modern luxury haven while maintaining practical functionality."</p>
+                            <p class="font-montserrat text-xs uppercase tracking-widest text-primary dark:text-white font-bold">Verified Client</p>
+                            <p class="font-poppins text-xs text-charcoal/50 dark:text-ivory/50">Residential Project</p>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="glass-card p-8 relative z-10 gs-reveal-up">
+                            <div class="text-accent text-sm mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="font-poppins text-charcoal/80 dark:text-ivory/80 text-sm italic mb-4">"Professionalism at its peak. The 3D visualization was exactly what they delivered. Highly recommend Priyanshu Interior for their transparent process and premium quality."</p>
+                            <p class="font-montserrat text-xs uppercase tracking-widest text-primary dark:text-white font-bold">Verified Client</p>
+                            <p class="font-poppins text-xs text-charcoal/50 dark:text-ivory/50">Commercial Project</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 gs-reveal-up">
+                        <a href="https://google.com" target="_blank" class="inline-flex items-center gap-2 font-montserrat text-xs uppercase tracking-widest text-primary dark:text-white hover:text-accent dark:hover:text-accent transition-colors hoverable">
+                            Read all 36+ Google Reviews <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 md:py-32 bg-white dark:bg-[#1A1A1A] transition-colors duration-500">
+        <div class="container mx-auto px-6 md:px-12 max-w-4xl">
+            <div class="text-center mb-16 gs-reveal-up">
+                <h3 class="font-montserrat text-accent tracking-[0.2em] text-sm uppercase mb-4">Knowledge Base</h3>
+                <h2 class="font-playfair text-4xl md:text-5xl text-primary dark:text-white">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-charcoal/10 dark:border-white/10 rounded-sm gs-reveal-up faq-item transition-colors duration-500">
+                    <button class="w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none hoverable">
+                        <span class="font-playfair text-lg md:text-xl text-primary dark:text-white">What is the typical duration of an interior project?</span>
+                        <i class="fas fa-plus text-accent transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out faq-content">
+                        <p class="px-6 pb-6 font-poppins text-sm text-charcoal/70 dark:text-ivory/70 font-light">
+                            The timeline varies based on the scope and size of the project. A standard modular kitchen takes 3-4 weeks, while a complete 3BHK residential turnkey project typically takes 45 to 90 days from the design sign-off to final handover.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-charcoal/10 dark:border-white/10 rounded-sm gs-reveal-up faq-item transition-colors duration-500">
+                    <button class="w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none hoverable">
+                        <span class="font-playfair text-lg md:text-xl text-primary dark:text-white">Do you provide warranties on your materials and workmanship?</span>
+                        <i class="fas fa-plus text-accent transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out faq-content">
+                        <p class="px-6 pb-6 font-poppins text-sm text-charcoal/70 dark:text-ivory/70 font-light">
+                            Yes, we stand by the quality of our work. We provide comprehensive warranties on all modular hardware, plywood, and laminates as per manufacturer terms. Our execution also carries a service warranty to ensure your peace of mind.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-charcoal/10 dark:border-white/10 rounded-sm gs-reveal-up faq-item transition-colors duration-500">
+                    <button class="w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none hoverable">
+                        <span class="font-playfair text-lg md:text-xl text-primary dark:text-white">Can we customize designs to fit a specific budget?</span>
+                        <i class="fas fa-plus text-accent transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out faq-content">
+                        <p class="px-6 pb-6 font-poppins text-sm text-charcoal/70 dark:text-ivory/70 font-light">
+                            Absolutely. We believe luxury should be accessible. During our initial consultation, we discuss your budget constraints and suggest material combinations and design alternatives that achieve a premium look without exceeding your financial plan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-charcoal/10 dark:border-white/10 rounded-sm gs-reveal-up faq-item transition-colors duration-500">
+                    <button class="w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none hoverable">
+                        <span class="font-playfair text-lg md:text-xl text-primary dark:text-white">What materials do you use for modular kitchens?</span>
+                        <i class="fas fa-plus text-accent transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out faq-content">
+                        <p class="px-6 pb-6 font-poppins text-sm text-charcoal/70 dark:text-ivory/70 font-light">
+                            We use only BWP (Boiling Water Proof) marine-grade plywood for kitchen cabinets, paired with premium laminates, acrylics, or PU finishes. We integrate high-end hardware from globally recognized brands for soft-close mechanisms and organizers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="bg-primary text-white relative">
+        <div class="flex flex-col lg:flex-row">
+            
+            <!-- Contact Info -->
+            <div class="w-full lg:w-1/2 p-10 md:p-20 lg:p-32 z-10">
+                <h3 class="font-montserrat text-accent tracking-[0.2em] text-sm uppercase mb-4 gs-reveal-up">Get in Touch</h3>
+                <h2 class="font-playfair text-4xl md:text-5xl lg:text-6xl text-white mb-10 gs-reveal-up">Start Your Design Journey.</h2>
+                
+                <div class="space-y-8 mb-12">
+                    <div class="flex items-start gap-4 gs-reveal-up">
+                        <i class="fas fa-map-marker-alt text-accent text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-montserrat text-sm uppercase tracking-widest mb-1 text-white/50">Location</h4>
+                            <p class="font-poppins font-light text-lg">Shivshakti Apartment,<br>Talpukur, Barrackpore,<br>Kolkata, West Bengal, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4 gs-reveal-up">
+                        <i class="fas fa-clock text-accent text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-montserrat text-sm uppercase tracking-widest mb-1 text-white/50">Working Hours</h4>
+                            <p class="font-poppins font-light text-lg">Open 24 Hours</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 gs-reveal-up">
+                    <a href="tel:+910000000000" class="bg-accent text-white text-center font-montserrat text-sm tracking-widest px-8 py-4 uppercase hover:bg-white hover:text-primary transition-all duration-400 magnetic hoverable w-full sm:w-auto">
+                        <i class="fas fa-phone-alt mr-2"></i> Call Now
+                    </a>
+                    <a href="https://wa.me/910000000000" target="_blank" class="bg-transparent border border-white text-white text-center font-montserrat text-sm tracking-widest px-8 py-4 uppercase hover:bg-[#25D366] hover:border-[#25D366] transition-all duration-400 magnetic hoverable w-full sm:w-auto">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Google Map Embed -->
+            <div class="w-full lg:w-1/2 h-[500px] lg:h-auto gs-reveal-up grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-1000">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14725.328499252358!2d88.3547372!3d22.7719662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89a9f24e39fb3%3A0x6fb247858c44a703!2sBarrackpore%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <!-- Map Overlay buttons -->
+                <div class="absolute bottom-10 right-10 flex gap-4 hidden md:flex">
+                    <a href="https://maps.google.com/?q=Talpukur,Barrackpore,Kolkata" target="_blank" class="bg-white text-primary font-montserrat text-xs tracking-widest px-6 py-3 uppercase hover:bg-accent hover:text-white transition-all duration-300 shadow-xl hoverable">
+                        Open in Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary pt-20 pb-10 border-t border-white/10">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-white/10 pb-10 mb-10">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="font-playfair text-3xl font-bold tracking-wider text-white hoverable">
+                        PRIYANSHU<span class="text-accent text-lg ml-1">INTERIOR</span>
+                    </a>
+                    <p class="font-poppins text-white/50 text-sm mt-2">Crafting Timeless Interior Experiences.</p>
+                </div>
+                
+                <div class="flex gap-6">
+                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-accent hover:border-accent transition-colors hoverable"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-accent hover:border-accent transition-colors hoverable"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-accent hover:border-accent transition-colors hoverable"><i class="fab fa-houzz"></i></a>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs font-montserrat text-white/30 uppercase tracking-widest">
+                <p>&copy; 2026 Priyanshu Interior. All Rights Reserved.</p>
+                <div class="mt-4 md:mt-0 flex gap-4">
+                    <a href="#" class="hover:text-white transition-colors hoverable">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors hoverable">Terms of Service</a>
+                </div>
+            </div>
+            
+            <!-- Disclaimer Block as Requested -->
+            <div class="mt-12 p-4 border border-white/10 bg-black/30 rounded text-center text-white/40 text-xs font-poppins">
+                <p><strong>Disclaimer:</strong> This website is an unofficial concept created using publicly available information for portfolio and demonstration purposes only. It does not represent the actual business, nor are the statistics, testimonials, or history legally binding.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lenis Smooth Scroll (Fixed CDN Link) -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+
+    <script>
+        // 1. Initialize Lenis Smooth Scroll with Safe Check
+        if (typeof Lenis !== 'undefined') {
+            const lenis = new Lenis({
+                duration: 1.2,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                direction: 'vertical',
+                gestureDirection: 'vertical',
+                smooth: true,
+                mouseMultiplier: 1,
+                smoothTouch: false,
+                touchMultiplier: 2,
+                infinite: false,
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+
+            // Sync GSAP ScrollTrigger with Lenis
+            gsap.registerPlugin(ScrollTrigger);
+            lenis.on('scroll', ScrollTrigger.update);
+            gsap.ticker.add((time) => { lenis.raf(time * 1000); });
+            gsap.ticker.lagSmoothing(0, 0);
+        } else {
+            console.warn("Lenis smooth scroll library failed to load.");
+        }
+
+        // 2. Custom Cursor Logic
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+        const hoverables = document.querySelectorAll('.hoverable, a, button, input, textarea');
+
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            
+            // Dot follows instantly
+            if(cursorDot) {
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+            }
+            
+            // Outline follows with slight delay
+            if(cursorOutline) {
+                cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`
+                }, { duration: 500, fill: "forwards" });
+            }
+        });
+
+        hoverables.forEach(el => {
+            el.addEventListener('mouseenter', () => { document.body.classList.add('hover-active'); });
+            el.addEventListener('mouseleave', () => { document.body.classList.remove('hover-active'); });
+        });
+
+        // 3. Magnetic Buttons
+        const magnets = document.querySelectorAll('.magnetic');
+        magnets.forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                gsap.to(btn, { duration: 0.3, x: x * 0.3, y: y * 0.3, ease: "power2.out" });
+            });
+            btn.addEventListener('mouseleave', () => {
+                gsap.to(btn, { duration: 0.3, x: 0, y: 0, ease: "power2.out" });
+            });
+        });
+
+        // 4. Navbar Glass Effect on Scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if(!navbar) return;
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass-nav');
+                navbar.classList.remove('py-6');
+                navbar.classList.add('py-4');
+            } else {
+                navbar.classList.remove('glass-nav');
+                navbar.classList.add('py-6');
+                navbar.classList.remove('py-4');
+            }
+        });
+
+        // 5. Hero Animations
+        const tl = gsap.timeline();
+        
+        // Image scale down
+        tl.fromTo('.parallax-bg', 
+            { scale: 1.2 }, 
+            { scale: 1, duration: 2, ease: "power3.inOut" }
+        )
+        // Text reveal
+        .fromTo('.hero-elem', 
+            { y: 100, opacity: 0 }, 
+            { y: 0, opacity: 1, duration: 1, stagger: 0.15, ease: "power3.out" },
+            "-=1.2"
+        );
+
+        // Hero Parallax Scroll
+        gsap.to('.parallax-bg', {
+            yPercent: 30,
+            ease: "none",
+            scrollTrigger: {
+                trigger: "header",
+                start: "top top",
+                end: "bottom top",
+                scrub: true
+            }
+        });
+
+        // Floating Card subtle motion
+        gsap.to('.gs-float', {
+            y: -15,
+            duration: 2,
+            yoyo: true,
+            repeat: -1,
+            ease: "sine.inOut"
+        });
+
+        // 6. Scroll Reveal Animations
+        const revealUps = document.querySelectorAll('.gs-reveal-up');
+        revealUps.forEach(el => {
+            gsap.fromTo(el,
+                { y: 50, opacity: 0 },
+                { y: 0, opacity: 1, duration: 1, ease: "power2.out",
+                  scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none reverse" }
+                }
+            );
+        });
+
+        gsap.fromTo('.gs-reveal-left',
+            { x: -50, opacity: 0 },
+            { x: 0, opacity: 1, duration: 1, ease: "power2.out",
+                scrollTrigger: { trigger: '.gs-reveal-left', start: "top 80%" }
+            }
+        );
+
+        gsap.fromTo('.gs-reveal-right',
+            { x: 50, opacity: 0 },
+            { x: 0, opacity: 1, duration: 1, ease: "power2.out",
+                scrollTrigger: { trigger: '.gs-reveal-right', start: "top 80%" }
+            }
+        );
+
+        // 7. Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+            const target = parseFloat(counter.getAttribute('data-target'));
+            const isDecimal = counter.hasAttribute('data-decimal');
+            
+            ScrollTrigger.create({
+                trigger: counter,
+                start: "top 90%",
+                once: true,
+                onEnter: () => {
+                    gsap.to(counter, {
+                        innerHTML: target,
+                        duration: 2,
+                        ease: "power2.out",
+                        snap: { innerHTML: isDecimal ? 0.1 : 1 },
+                        onUpdate: function() {
+                            if(isDecimal) {
+                                counter.innerHTML = Number(this.targets()[0].innerHTML).toFixed(1);
+                            }
+                        }
+                    });
+                }
+            });
+        });
+
+        // 8. Portfolio Filtering Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Active state styling
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'text-accent', 'border-accent');
+                    b.classList.add('text-white/50', 'border-transparent');
+                });
+                btn.classList.add('active', 'text-accent', 'border-accent');
+                btn.classList.remove('text-white/50', 'border-transparent');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        gsap.to(item, { scale: 1, opacity: 1, duration: 0.4, display: 'block', ease: "power2.out" });
+                    } else {
+                        gsap.to(item, { scale: 0.8, opacity: 0, duration: 0.4, display: 'none', ease: "power2.in" });
+                    }
+                });
+                // Update ScrollTrigger after layout shift
+                setTimeout(() => ScrollTrigger.refresh(), 500);
+            });
+        });
+
+        // 9. FAQ Accordion Logic
+        const faqItems = document.querySelectorAll('.faq-item button');
+        faqItems.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isOpen = content.style.maxHeight;
+
+                // Close all
+                document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
+                document.querySelectorAll('.faq-item i').forEach(i => i.style.transform = 'rotate(0deg)');
+
+                if (!isOpen) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.style.transform = 'rotate(45deg)';
+                }
+                
+                setTimeout(() => ScrollTrigger.refresh(), 500);
+            });
+        });
+
+        // 10. Dark Mode Toggle Setup
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        // On page load, verify active theme
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.remove('dark');
+        }
+
+        // Toggle behavior with Safety Check
+        if (themeToggleBtn) {
+            themeToggleBtn.addEventListener('click', () => {
+                htmlElement.classList.toggle('dark');
+                if (htmlElement.classList.contains('dark')) {
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>
